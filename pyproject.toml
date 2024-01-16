@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "aws-scrape-creds"
+version = "0.1.0"
+description = ""
+authors = ["Jarrad Whitaker <155397737+jwhitaker-gridcog@users.noreply.github.com>"]
+include = ["aws_scrape_creds.py"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.ruff.format]
+indent-style = 'tab'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+aws-scrape-creds = "aws_scrape_creds:main"
